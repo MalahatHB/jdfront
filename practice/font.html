@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parastoo:wght@400..700&family=Playpen+Sans+Arabic:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Font</title>
+    <style>
+      @font-face {
+        font-family: "vazirmatn";
+        src: url(../lib//fonts/vazirmatn/Vazirmatn[wght].woff2) format(woff2);
+      }
+
+      @font-face {
+        font-family: "vazirmatn";
+        src: url(../lib//fonts/vazirmatn/Vazirmatn-ExtraLight.woff2)
+          format(woff2);
+        font-weight: 100;
+      }
+
+      @font-face {
+        font-family: "vazirmatn";
+        src: url(../lib//fonts/vazirmatn/Vazirmatn-Bold.woff2) format(woff2);
+        font-weight: 700;
+      }
+
+      body {
+        font-family: "vazirmatn";
+      }
+
+      p {
+        font-weight: 100;
+      }
+
+      h2 {
+        font-weight: 700;
+      }
+
+      ul {
+        font-family: "Montserrat", sans-serif;
+      }
+
+      ol {
+        font-family: "Playpen Sans Arabic", cursive;
+      }
+
+      #web-font {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>فونت</h1>
+    <hr />
+    <h2>به سایت ما خوش آمدید</h2>
+    <p>
+      لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+      طراحان گرافیک است چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان
+      که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف
+      بهبود ابزارهای کاربردی می باشد
+    </p>
+    <h2>پسوند های فونت:</h2>
+    <ul style="direction: ltr">
+      <li>TTF True Type Font</li>
+      <li>WOFF Web Open Font Formet</li>
+      <li id="web-font">WOFF2 Web Open Font Formet (Version 2)</li>
+      <li>EOT Embeded Open Type</li>
+    </ul>
+
+    <h2>از نظر دسترسی به فایل ها</h2>
+    <ol>
+      <li>استفاده به صورت فایل در سرور خودمان</li>
+      <li>
+        استفادعه از CDN ها (Content Delivery Network)
+        <ul>
+          <li>Google Fonts</li>
+        </ul>
+      </li>
+    </ol>
+  </body>
+</html>

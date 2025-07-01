@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      .mb-2 {
+        margin-bottom: 0.75rem;
+      }
+
+      .form-label {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <hr />
+
+    <div dir="rtl">
+      <h2>فرم چیست</h2>
+      <p>برای گرفتن اطلاعات از فرم ها استفاده میکنیم</p>
+      <p>خاصیت name باعث میشود ما بتوانیم با سرور ارتباط اطلاعاتی بگیریم</p>
+    </div>
+    <hr />
+
+    <form action="">
+      <div class="mb-2">
+        <label class="form-label" for="userName">User Name</label>
+        <input id="userName" name="UserName" type="text" />
+        <!-- UserName=sa  -->
+      </div>
+
+      <div class="mb-2">
+        <label class="form-label" for="password">Password</label>
+        <input id="password" name="Password" type="password" />
+        <!-- Password=123  -->
+      </div>
+
+      <div class="mb-2">
+        <input id="rememberMe" name="RememberMe" type="checkbox" />
+        <label for="rememberMe">Remember me</label>
+        <!-- RememberMe=On  -->
+        <!-- اگر تیک نزده باشد هیچ چیز نمیفرستد -->
+      </div>
+
+      <div class="mb-2">
+        <input id="female" name="Gender" type="radio" />
+        <label for="female">Female</label>
+        <br />
+        <input id="male" name="Gender" type="radio" />
+        <label for="male">Male</label>
+        <!-- Gender=Male  -->
+      </div>
+      <!-- UserName=sa&Password=123&RememberMe=On$Gender=Male  -->
+    </form>
+  </body>
+</html>
