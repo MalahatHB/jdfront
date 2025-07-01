@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Element Selectors</title>
+    <style>
+      ::selection {
+        background-color: antiquewhite;
+      }
+
+      p::first-letter {
+        font-size: 32px;
+        padding-left: 10px;
+        font-style: italic;
+        color: orange;
+      }
+
+      p::first-line {
+        color: cornflowerblue;
+      }
+
+      p::before {
+        content: "";
+      }
+
+      p::after {
+        content: url(../lib/img/airplane-engines.svg);
+      }
+
+      a::after {
+        content: "";
+        background-color: darkcyan;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pseudo Element Selectors</h1>
+    <hr />
+    <a href="#">Lorem ipsum dolor sit amet.</a>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
+      voluptatum mollitia corrupti recusandae. Suscipit sunt dolor nulla nemo ex
+      vitae architecto esse, corrupti vel cumque minus quo iste dolore officia.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+      reprehenderit ex illo temporibus quibusdam expedita quo! Laboriosam
+      perferendis debitis quisquam quo. Aliquam accusamus ratione nam porro
+      praesentium. Id, blanditiis maxime?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa vel
+      reprehenderit sequi magnam exercitationem? Fuga architecto, excepturi
+      neque eaque aut odit fugiat natus mollitia molestiae, dolorem non pariatur
+      maiores enim?
+    </p>
+  </body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List Horizontal</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      h1,
+      h2 {
+        margin: 20px 5px;
+      }
+
+      p {
+        margin: 10px 5px;
+      }
+
+      ul {
+        list-style-type: none;
+        background-color: #273f4f;
+        overflow: hidden;
+      }
+
+      ul li {
+        float: left;
+        padding: 15px 0px;
+      }
+
+      ul li a {
+        display: block;
+        width: 130px;
+        height: 40px;
+        background-color: #273f4f;
+        color: #fe7743;
+        text-decoration: none;
+        text-align: center;
+        line-height: 40px;
+      }
+
+      ul li a:hover {
+        color: #efeeea;
+      }
+
+      ul::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="../">Home Page</a></li>
+      <li><a href="../about-me.html">About Me Page</a></li>
+      <li><a href="../contact-us.html">Contact Us Page</a></li>
+      <li><a href="../blog/">Blog Page</a></li>
+    </ul>
+
+    <h1>Horizontal List (nav)</h1>
+    <hr />
+    <h2>Lorem ipsum dolor sit amet.</h2>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto
+      cupiditate distinctio, dignissimos sit nihil quo reprehenderit voluptates
+      possimus eveniet! Hic quibusdam sunt animi, dignissimos delectus
+      repellendus? Hic quia eaque ab?
+    </p>
+  </body>
+</html>

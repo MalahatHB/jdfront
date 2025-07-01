@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Submenu</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .menu,
+      ul {
+        list-style-type: none;
+      }
+
+      .menu > li {
+        float: left;
+      }
+
+      .menu li a {
+        display: block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        background-color: #24485f;
+        color: lightgoldenrodyellow;
+        text-decoration: none;
+      }
+
+      .menu li a:hover {
+        background-color: #fc804f;
+      }
+
+      .menu li ul {
+        display: none;
+      }
+
+      .menu li:hover ul {
+        display: block;
+      }
+
+      .menu li::after {
+        content: "";
+        display: block;
+        border-bottom: 5px solid #64a154;
+        width: 0;
+        margin: 0 auto;
+        transition: 0.8s;
+      }
+
+      .menu li:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="../">Home Page</a></li>
+      <li><a href="../about-me.html">About Me Page</a></li>
+      <li><a href="../contact-us.html">Contact Us Page</a></li>
+      <li>
+        <a href="../blog/">Blog Page</a>
+        <ul>
+          <li><a href="#">Post 01</a></li>
+          <li><a href="#">Post 02</a></li>
+          <li><a href="#">Post 03</a></li>
+          <li><a href="#">Post 04</a></li>
+          <li><a href="#">Post 05</a></li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

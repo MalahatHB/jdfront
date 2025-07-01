@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Selectors</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-size: 20px;
+      }
+
+      body {
+        margin: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+        color: steelblue;
+      }
+
+      p {
+        margin: 5px;
+        margin: 20px 0;
+      }
+
+      div {
+        margin: 10px 0px;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: 1px solid #000;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: 35px;
+      }
+
+      #test {
+        text-align: justify;
+        color: rosybrown;
+      }
+
+      .parent {
+        color: chocolate;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Simple Selectors</h1>
+    <hr />
+    <div id="test">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime aliquam
+      neque omnis excepturi? Perspiciatis sequi debitis totam exercitationem
+      facere? Nemo vitae eos similique sint expedita facilis veniam omnis
+      placeat repudiandae.
+    </div>
+    <div class="parent">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione veritatis
+      iusto pariatur excepturi fugiat accusantium! Eius placeat saepe labore
+      voluptatibus, earum sit cupiditate aliquam voluptatum totam repellendus
+      quidem in iure.
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia dolorem
+      corrupti quibusdam placeat unde maxime quia possimus voluptate quidem
+      quasi excepturi pariatur itaque suscipit, libero repellendus et expedita
+      ut obcaecati!
+    </p>
+
+    <table>
+      <thead>
+        <tr>
+          <th scope="col" style="width: 70px">Row</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>9</th>
+          <td>Student 09</td>
+          <td>Last Name 09</td>
+          <td>9</td>
+        </tr>
+        <tr>
+          <th>10</th>
+          <td>Student 09</td>
+          <td>Last Name 09</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <th>11</th>
+          <td>Student 09</td>
+          <td>Last Name 09</td>
+          <td>11</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+@import url(./orange-theme.css);
+
+body {
+    background-color: var(--fourth);
+}
+
+h1 {
+    color: var(--primary);
+}
+
+h2 {
+    color: var(--secondary);
+}
+
+p {
+    color: var(--third);
+    line-height: 28px;
+}
+
+a {
+    color: var(--primary);
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      /* table {
+        border: 2px solid salmon;
+      }
+
+      tr {
+        border: 2px solid salmon;
+      }
+
+      td {
+        border: 2px solid salmon;
+      }
+
+      th {
+        border: 2px solid salmon;
+      } */
+
+      table {
+        width: 100%;
+      }
+
+      table,
+      tr,
+      td,
+      th {
+        border: 2px solid salmon;
+        border-collapse: collapse;
+        padding: 10px;
+      }
+
+      tr:nth-child(even) {
+        background-color: rgba(32, 178, 171, 0.432);
+      }
+
+      tr:nth-child(odd) {
+        background-color: rgba(240, 128, 128, 0.473);
+      }
+
+      thead tr {
+        background-color: lightsalmon !important;
+      }
+
+      tfoot tr {
+        background-color: yellowgreen !important;
+      }
+
+      tr:hover {
+        background-color: indianred;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Table</h1>
+    <hr />
+    <table>
+      <thead>
+        <tr>
+          <th scope="col" style="width: 70px">Row</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Age</th>
+          <th>Major</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Parinaz</td>
+          <td>Entezariyan</td>
+          <td>18</td>
+          <td rowspan="3">IT</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Matina</td>
+          <td>TajMehri</td>
+          <td>40</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Amir Mohammad</td>
+          <td>Chegini</td>
+          <td>32</td>
+        </tr>
+        <tr>
+          <th>4</th>
+          <td>Student 04</td>
+          <td>Last Name 04</td>
+          <td>0</td>
+          <td>Null</td>
+        </tr>
+        <tr>
+          <th>5</th>
+          <td>Student 05</td>
+          <td>Last Name 05</td>
+          <td>0</td>
+          <td>Null</td>
+        </tr>
+        <tr>
+          <th>6</th>
+          <td>Student 06</td>
+          <td>Last Name 06</td>
+          <td>0</td>
+          <td>Null</td>
+        </tr>
+        <tr>
+          <th>7</th>
+          <td>Student 07</td>
+          <td>Last Name 07</td>
+          <td>0</td>
+          <td>Null</td>
+        </tr>
+        <tr>
+          <th>8</th>
+          <td>Student 08</td>
+          <td>Last Name 08</td>
+          <td>0</td>
+          <td>Null</td>
+        </tr>
+        <tr>
+          <th>9</th>
+          <td>Student 09</td>
+          <td>Last Name 09</td>
+          <td>0</td>
+          <td>Null</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th>10</th>
+          <td colspan="4">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores
+            sapiente, soluta ducimus repellendus eum quo nostrum debitis
+            mollitia architecto! Inventore dolore eveniet amet beatae, aliquam
+            molestiae neque repellendus numquam harum!
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>

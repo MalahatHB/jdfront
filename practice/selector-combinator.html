@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinator Selectors</title>
+    <style>
+      .parent p {
+        color: cadetblue;
+      }
+
+      .parent > p {
+        font-size: 20px;
+      }
+
+      .parent > div > p {
+        background-color: antiquewhite;
+      }
+
+      .parent + p {
+        color: crimson;
+      }
+
+      .parent ~ p {
+        background-color: lightgray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Combinator Selectors</h1>
+    <hr />
+    <div class="parent">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
+        distinctio excepturi quaerat, natus a, asperiores cupiditate obcaecati,
+        corrupti iste necessitatibus modi beatae ut quas id tenetur? Corporis
+        quam animi cupiditate?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit
+        consectetur dolor commodi animi officiis facere accusantium
+        exercitationem quis ipsa, ullam vel quibusdam, laborum debitis. Magnam a
+        veniam quidem repudiandae facere.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+        dolores, vitae nemo voluptatibus soluta debitis tenetur error voluptatum
+        ipsum ipsam libero accusantium, exercitationem dolorum recusandae
+        cupiditate perspiciatis odio, sed ex!
+      </p>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium
+          nemo eligendi mollitia consequuntur, molestiae ad, molestias quibusdam
+          alias provident doloribus porro ipsam iste neque maiores, animi sint
+          voluptatum asperiores. Facere!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+          temporibus facere earum neque fuga dolorum iusto laboriosam! Numquam
+          fugit, delectus quia dolorum recusandae consectetur cum, autem atque
+          expedita commodi quam.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum optio id
+          natus beatae saepe nostrum vel officiis? Deserunt minima voluptatum
+          suscipit reprehenderit mollitia debitis doloremque, voluptates
+          voluptatibus laborum enim cupiditate!
+        </p>
+      </div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero saepe
+      excepturi cupiditate laborum tenetur, eum atque sint voluptate eaque iste
+      rem magni, eius impedit deleniti esse? Omnis accusamus perferendis labore!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Alias doloremque
+      sed similique, mollitia cum necessitatibus iure inventore ipsum!
+      Accusantium ea corrupti dicta optio quibusdam nulla provident tenetur rem
+      cum a.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum,
+      consequuntur itaque dolore explicabo, facilis unde debitis impedit ipsum
+      harum deleniti voluptate dolorum vero pariatur, nemo qui asperiores in
+      aspernatur! Neque.
+    </p>
+  </body>
+</html>

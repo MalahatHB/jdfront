@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Selectors</title>
+    <style>
+      a[target] {
+        background-color: cornflowerblue;
+        font-size: 20px;
+      }
+
+      a[href^="../"] {
+        color: crimson;
+      }
+
+      a[href^="../"]::after {
+        content: " Click Here!";
+        color: green;
+      }
+
+      img[class|="cat"] {
+        border-radius: 8px;
+        border: 4px solid orange;
+      }
+
+      img[title*="Sky"] {
+        border: 3px dashed cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Attribute Selectors</h1>
+    <hr />
+    <h2>About Google</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quae,
+      nulla <a href="https://google.com" target="_blank">doloribus</a> porro cum
+      distinctio sit esse, eaque mollitia aliquid labore natus et, quis ratione
+      molestiae recusandae error omnis ad?
+    </p>
+    <h2>About Me</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quae,
+      nulla <a href="../about-me.html">About Me</a> porro cum distinctio sit
+      esse, eaque mollitia aliquid labore natus et, quis ratione molestiae
+      recusandae <a href="../">Home Page</a> omnis ad?
+    </p>
+    <h2>About Google Translate</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, similique
+      aperiam
+      <a href="https://translate.google.com/" target="_blank"
+        >About Google Translate</a
+      >
+      unde eius officia facere cumque? Veritatis minus quo pariatur magnam animi
+      eius cupiditate voluptas nostrum deserunt. Incidunt, ratione.
+    </p>
+
+    <img
+      src="../lib/img/cat-domestication.jpg"
+      alt="cat"
+      class="cat-image"
+      style="width: 400px"
+      title="Cat"
+    />
+    <img
+      src="../lib/img/about-me-sky.jpg"
+      alt="sky"
+      class="sky-image"
+      style="width: 400px"
+      title="Sky"
+    />
+  </body>
+</html>

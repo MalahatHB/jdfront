@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vertical Navigation</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style-type: none;
+        width: 15%;
+        height: 100%;
+        position: fixed;
+        background-color: #24485f;
+        padding-top: 20px;
+        overflow: auto;
+      }
+
+      ul li a {
+        color: lightgoldenrodyellow;
+        text-decoration: none;
+        display: block;
+        padding: 8px 16px;
+      }
+
+      ul li a:hover:not(.active) {
+        background-color: #fc804f;
+      }
+
+      .active {
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="menu">
+      <li><a href="#">Products</a></li>
+      <li><a href="#">User Managment</a></li>
+      <li><a class="active" href="#">Blog</a></li>
+      <li><a href="#">Theme</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </body>
+</html>

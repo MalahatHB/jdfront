@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega menu</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      ul {
+        list-style-type: none;
+        float: left;
+      }
+
+      ul::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      ul li {
+        float: left;
+      }
+
+      ul li a {
+        display: block;
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #24485f;
+        color: lightgoldenrodyellow;
+        text-align: center;
+        text-decoration: none;
+      }
+
+      .mega {
+        position: absolute;
+        width: 500px;
+        height: 300px;
+        border: 1px solid black;
+        overflow: auto;
+      }
+
+      .mega div {
+        float: left;
+        height: 100%;
+      }
+
+      .mega div:first-child {
+        width: 20%;
+        height: 500px;
+      }
+
+      .mega div:last-child {
+        width: 80%;
+      }
+
+      ul li .mega {
+        display: none;
+      }
+
+      ul li:hover .mega {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>
+        <a href="../">Home Page</a>
+        <div class="mega">
+          <div style="background-color: lightblue">div 1</div>
+          <div style="background-color: lightcoral">div 2</div>
+        </div>
+      </li>
+      <li><a href="../about-me.html">About Me Page</a></li>
+      <li><a href="../contact-us.html">Contact Us Page</a></li>
+      <li><a href="../blog/">Blog Page</a></li>
+    </ul>
+  </body>
+</html>
