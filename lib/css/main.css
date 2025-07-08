@@ -384,6 +384,105 @@ ul.menu li a svg {
     flex-wrap: wrap;
 }
 
+.form-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.form-container {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 80px;
+  background-color: var(--white);
+  box-shadow: 0 0 20px var(--dark-gray);
+}
+
+.form-side-panel {
+  width: 60vw;
+  background-color: var(--pink-secondary);
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: var(--third);
+}
+
+.form-container .username-input,
+.form-container .password-input,
+.form-container .email-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    margin-bottom: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-container .username-input:focus,
+.form-container .password-input:focus,
+.form-container .email-input:focus {
+    border-color: var(--pink-secondary);
+    outline: none;
+}
+
+.form-container .remember-me input {
+    margin-right: 8px;
+    margin-bottom: 24px;
+}
+
+.form-container .remember-me input:checked {
+  accent-color: var(--pink-secondary);
+}
+
+.form-container a.login-button,
+.form-container a.submit-button {
+    display: block;
+    width: 100%;
+    background-color: var(--pink-secondary);
+    color: var(--white);
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-bottom: 28px;
+}
+
+.form-container a.login-button:hover,
+.form-container a.submit-button:hover {
+    background-color: var(--fourth);
+    color: var(--primary);
+}
+
+.form-container .forgot-password,
+.form-container .back-login {
+    text-align: center;
+}
+
+.form-container .forgot-password a,
+.form-container .back-login a {
+    color: var(--pink-secondary);
+    text-decoration: none;
+    font-size: 14px;
+}
+
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
     .bg-img-1,
