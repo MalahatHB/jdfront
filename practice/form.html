@@ -5,12 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <style>
+      fieldset {
+        width: 30vw;
+      }
+
       .mb-2 {
         margin-bottom: 0.75rem;
       }
 
       .form-label {
         display: block;
+      }
+
+      .inputs {
+        width: 90%;
+        padding: 12px;
+        border: 1px solid #574f4f;
+        border-radius: 5px;
+      }
+
+      .dropdown {
+        width: 96%;
+      }
+
+      .button {
+        display: block;
+        width: 100%;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 28px;
+      }
+
+      .input-button {
+        background-color: #379ad3;
+      }
+
+      .submit-button {
+        background-color: #19a844;
+      }
+
+      .reset-button {
+        background-color: #646865;
       }
     </style>
   </head>
@@ -25,35 +66,185 @@
     </div>
     <hr />
 
-    <form action="">
-      <div class="mb-2">
-        <label class="form-label" for="userName">User Name</label>
-        <input id="userName" name="UserName" type="text" />
-        <!-- UserName=sa  -->
-      </div>
+    <form
+      action="https://www.w3schools.com/action_page.php"
+      target="_blank"
+      method="POST"
+    >
+      <fieldset>
+        <legend>Login</legend>
+        <div class="mb-2">
+          <label for="userName" class="form-label">User Name *</label>
+          <input
+            type="text"
+            name="UserName"
+            id="userName"
+            required
+            minlength="5"
+            maxlength="40"
+            placeholder="Enter your username"
+            class="inputs"
+          />
+          <!-- UserName=sa  -->
+        </div>
 
-      <div class="mb-2">
-        <label class="form-label" for="password">Password</label>
-        <input id="password" name="Password" type="password" />
-        <!-- Password=123  -->
-      </div>
+        <div class="mb-2">
+          <label for="password" class="form-label">Password *</label>
+          <input
+            type="password"
+            name="Password"
+            id="password"
+            required
+            placeholder="Enter your password"
+            class="inputs"
+          />
+          <!-- Password=123  -->
+        </div>
 
-      <div class="mb-2">
-        <input id="rememberMe" name="RememberMe" type="checkbox" />
-        <label for="rememberMe">Remember me</label>
-        <!-- RememberMe=On  -->
-        <!-- اگر تیک نزده باشد هیچ چیز نمیفرستد -->
-      </div>
+        <div class="mb-2">
+          <input type="checkbox" name="RememberMe" id="rememberMe" />
+          <label for="rememberMe">Remember me</label>
+          <!-- RememberMe=On  -->
+          <!-- اگر تیک نزده باشد هیچ چیز نمیفرستد -->
+        </div>
 
-      <div class="mb-2">
-        <input id="female" name="Gender" type="radio" />
-        <label for="female">Female</label>
-        <br />
-        <input id="male" name="Gender" type="radio" />
-        <label for="male">Male</label>
-        <!-- Gender=Male  -->
-      </div>
-      <!-- UserName=sa&Password=123&RememberMe=On$Gender=Male  -->
+        <div class="mb-2">
+          <input type="radio" name="Gender" id="female" value="Female" />
+          <label for="female">Female</label>
+          <br />
+          <input type="radio" name="Gender" id="male" value="Male" />
+          <label for="male">Male</label>
+          <!-- Gender=Male  -->
+        </div>
+        <!-- UserName=sa&Password=123&RememberMe=On$Gender=Male  -->
+
+        <div class="mb-2">
+          <label for="mobile" class="form-label">Mobile *</label>
+          <input
+            type="tel"
+            name="Mobile"
+            id="mobile"
+            required
+            placeholder="09XX-XXX-XX-XX"
+            pattern="09[0-9]{2}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+            class="inputs"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="phone" class="form-label">Phone (readonly)</label>
+          <input
+            type="tel"
+            name="Phone"
+            id="phone"
+            readonly
+            value="02177889922"
+            class="inputs"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="email" class="form-label">Email *</label>
+          <input
+            type="email"
+            name="Email"
+            id="email"
+            required
+            placeholder="example@domain.com"
+            class="inputs"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="age" class="form-label">Age</label>
+          <input
+            type="number"
+            name="Age"
+            id="age"
+            placeholder="Enter your age"
+            class="inputs"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="birth" class="form-label">Birth date (disabled)</label>
+          <input
+            type="number"
+            name="Birth"
+            id="birth"
+            disabled
+            placeholder="1380/01/07"
+            class="inputs"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="city" class="form-label">City</label>
+          <select name="City" id="city" class="inputs dropdown">
+            <option value="Tehran">Tehran</option>
+            <option value="Shiraz">Shiraz</option>
+            <option value="Tabriz">Tabriz</option>
+            <option value="Mashhad">Mashhad</option>
+            <option value="Esfahan">Esfahan</option>
+          </select>
+        </div>
+
+        <div class="mb-2">
+          <label for="browser" class="form-label">
+            Choose your browser from the list:
+          </label>
+          <input
+            list="browsers"
+            name="Browser"
+            id="browser"
+            placeholder="Browser"
+            class="inputs"
+          />
+
+          <datalist id="browsers">
+            <option value="Edge"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+          </datalist>
+        </div>
+
+        <div class="mb-2">
+          <label for="point" class="form-label">Point</label>
+          <input
+            type="number"
+            name="Point"
+            id="point"
+            step="5"
+            placeholder="Enter a point"
+            class="inputs"
+          />
+        </div>
+
+        <div class="mb-2">
+          <label for="comment" class="form-label">Comment</label>
+          <textarea
+            name="Comment"
+            id="comment"
+            placeholder="Your comment"
+            cols="50"
+            rows="10"
+            class="inputs"
+          ></textarea>
+        </div>
+
+        <div class="mb-2">
+          <input
+            type="button"
+            value="input-button"
+            class="button input-button"
+          />
+          <input type="submit" class="button submit-button" />
+          <button class="button submit-button">Button Tag</button>
+          <input type="reset" class="button reset-button" />
+        </div>
+      </fieldset>
     </form>
   </body>
 </html>
