@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      @keyframes changeColor {
+        from {
+          background-color: lightcoral;
+        }
+
+        to {
+          background-color: lightskyblue;
+        }
+      }
+
+      @keyframes moveDiv {
+        0% {
+          top: 0;
+          left: 0;
+          transform: rotate(180deg);
+          background-color: lightseagreen;
+          border-radius: 30%;
+        }
+        25% {
+          top: 0;
+          left: 300px;
+          background-color: lightsalmon;
+          border-radius: 40%;
+        }
+        50% {
+          top: 300px;
+          left: 300px;
+          background-color: lightskyblue;
+          border-radius: 50%;
+        }
+        75% {
+          top: 300px;
+          left: 0;
+          background-color: lightgreen;
+          border-radius: 40%;
+        }
+        100% {
+          top: 0;
+          left: 0;
+          background-color: lightpink;
+          border-radius: 30%;
+        }
+      }
+
+      div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        background-color: lightcoral;
+        animation-name: moveDiv;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+      }
+
+      svg {
+        transition: 0.5s;
+      }
+
+      svg:hover {
+        transform: rotate(-90deg);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Animation CSS</h1>
+    <hr />
+    <div></div>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="currentColor"
+      class="bi bi-chevron-right"
+      viewBox="0 0 16 16"
+    >
+      <path
+        fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+      />
+    </svg>
+  </body>
+</html>

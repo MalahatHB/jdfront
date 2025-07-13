@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filter</title>
+    <style>
+      img {
+        width: 220px;
+        margin: 20px;
+      }
+
+      .brightness {
+        filter: brightness(200%);
+      }
+
+      .boxshadow {
+        box-shadow: 10px 10px 10px 10px gray;
+      }
+
+      .dropshadow {
+        filter: drop-shadow(8px 8px 8px gray);
+      }
+    </style>
+  </head>
+  <body>
+    <img class="brightness" src="../lib/img/backpack.jpg" alt="backpack" />
+    <img class="boxshadow" src="../lib/img/starbucks.png" alt="starbucks" />
+    <img class="dropshadow" src="../lib/img/starbucks.png" alt="starbucks" />
+  </body>
+</html>
