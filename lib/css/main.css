@@ -412,6 +412,11 @@ ul.menu li a svg {
     letter-spacing: 2px;
 }
 
+.form-container .form-row {
+    display: flex;
+    gap: 20px;
+}
+
 .form-label {
     display: block;
     margin-bottom: 8px;
@@ -419,9 +424,8 @@ ul.menu li a svg {
     color: var(--third);
 }
 
-.form-container .username-input,
 .form-container .password-input,
-.form-container .email-input {
+.form-container .form-input {
     width: 100%;
     padding: 12px;
     border: 1px solid var(--light-gray);
@@ -430,9 +434,8 @@ ul.menu li a svg {
     transition: border-color 0.3s;
 }
 
-.form-container .username-input:focus,
 .form-container .password-input:focus,
-.form-container .email-input:focus {
+.form-container .form-input:focus {
     border-color: var(--pink-secondary);
     outline: none;
 }
@@ -446,14 +449,27 @@ ul.menu li a svg {
   accent-color: var(--pink-secondary);
 }
 
-.form-container a.login-button,
-.form-container a.submit-button {
+.form-container .remember-me a {
+    text-decoration: underline;
+    color: var(--gray);
+}
+
+.form-container .remember-me a:hover {
+    color: var(--secondary);
+}
+
+.form-container button.submit-button {
+    margin-top: 10px;
+}
+
+.form-container button.login-button,
+.form-container button.submit-button {
     display: block;
     width: 100%;
     background-color: var(--pink-secondary);
     color: var(--white);
     border: none;
-    padding: 10px;
+    padding: 15px 10px;
     font-size: 16px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -462,22 +478,35 @@ ul.menu li a svg {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s;
-    margin-bottom: 28px;
+    margin-bottom: 20px;
 }
 
-.form-container a.login-button:hover,
-.form-container a.submit-button:hover {
+.form-container button.login-button:hover,
+.form-container button.submit-button:hover {
     background-color: var(--fourth);
     color: var(--primary);
 }
 
-.form-container .forgot-password,
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forgot-password {
+    text-align: right;
+}
+
+.form-container .sign-up {
+    text-align: left;
+}
+
 .form-container .back-login {
     text-align: center;
 }
 
 .form-container .forgot-password a,
-.form-container .back-login a {
+.form-container .back-login a,
+.form-container .sign-up a {
     color: var(--pink-secondary);
     text-decoration: none;
     font-size: 14px;

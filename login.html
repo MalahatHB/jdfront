@@ -10,15 +10,16 @@
     <div class="form-wrapper">
       <div class="form-container">
         <h1>Login</h1>
-        <form action="">
+        <form action="admin.html" method="GET">
           <div>
-            <label class="form-label" for="userName">Username *</label>
+            <label class="form-label" for="email">Email *</label>
             <input
-              id="userName"
-              name="UserName"
+              id="email"
+              name="Email"
               type="text"
-              placeholder="Enter your username"
-              class="username-input"
+              required
+              placeholder="Enter your email"
+              class="form-input"
             />
           </div>
           <div>
@@ -27,17 +28,21 @@
               id="password"
               name="Password"
               type="password"
+              required
               placeholder="Enter your password"
               class="password-input"
             />
           </div>
           <div class="remember-me">
-            <input id="rememberMe" name="RememberMe" type="checkbox" />
+            <input id="rememberMe" name="RememberMe" type="checkbox" required />
             <label for="rememberMe">Remember me</label>
           </div>
-          <a class="login-button" href="./admin.html">Login</a>
-          <div class="forgot-password">
-            <a href="./forgot-password.html">Forgot Password?</a>
+          <button class="login-button" type="submit">Login</button>
+          <div class="links">
+            <div class="forgot-password">
+              <a href="./forgot-password.html">Forgot Password?</a>
+            </div>
+            <div class="sign-up">Or <a href="./sign-up.html">Sign Up?</a></div>
           </div>
         </form>
       </div>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./lib/css/main.css" />
+    <title>Sign up</title>
+  </head>
+  <body>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h1>Sign up</h1>
+        <form action="login.html" method="GET">
+          <div class="form-row">
+            <div>
+              <label class="form-label" for="firstName">First Name *</label>
+              <input
+                id="firstName"
+                name="FirstName"
+                type="text"
+                required
+                minlength="2"
+                maxlength="20"
+                placeholder="Enter your first name"
+                class="form-input"
+              />
+            </div>
+            <div>
+              <label class="form-label" for="lastName">Last Name *</label>
+              <input
+                id="lastName"
+                name="LastName"
+                type="text"
+                required
+                minlength="2"
+                maxlength="20"
+                placeholder="Enter your last name"
+                class="form-input"
+              />
+            </div>
+          </div>
+          <div>
+            <label class="form-label" for="email">Email *</label>
+            <input
+              id="email"
+              name="Email"
+              type="text"
+              required
+              placeholder="example@domain.com"
+              class="form-input"
+            />
+          </div>
+          <div>
+            <label class="form-label" for="password">Password *</label>
+            <input
+              id="password"
+              name="Password"
+              type="password"
+              required
+              minlength="8"
+              placeholder="Enter your password"
+              class="password-input"
+            />
+          </div>
+          <div class="remember-me">
+            <input id="rememberMe" name="RememberMe" type="checkbox" required />
+            <label for="rememberMe">
+              Accept the <a href="#">Data Protection Agreement</a>.
+            </label>
+          </div>
+          <button class="login-button" type="submit">Create Account</button>
+          <div class="back-login">
+            <p>
+              Already have an Account?
+              <a href="./login.html">Login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="form-side-panel"></div>
+    </div>
+  </body>
+</html>
