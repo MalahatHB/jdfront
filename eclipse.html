@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./lib/img/sun.png" type="image/x-icon" />
+    <title>Eclipse</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #87ceeb;
+        animation-name: skyCycle;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        transition: background-color 1s ease-in-out;
+      }
+
+      .sun {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(
+          circle,
+          #ffe066 0%,
+          #ffaa00 60%,
+          #cc7700 100%
+        );
+        border-radius: 50%;
+        box-shadow: 0 0 60px 30px rgba(255, 204, 0, 0.6);
+        z-index: 1;
+      }
+
+      .moon {
+        position: absolute;
+        top: 50%;
+        left: -220px;
+        width: 200px;
+        height: 200px;
+        background: radial-gradient(circle at 30% 30%, #999, #555 70%);
+        border-radius: 50%;
+        transform: translateY(-50%);
+        animation-name: moonPath;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        box-shadow: inset -20px -20px 40px rgba(0, 0, 0, 0.4),
+          0 0 20px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+      }
+
+      .moon::before,
+      .moon::after {
+        content: "";
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle, #333 30%, transparent 80%);
+        opacity: 0.5;
+        pointer-events: none;
+      }
+
+      .moon::before {
+        width: 30px;
+        height: 30px;
+        top: 40px;
+        left: 50px;
+      }
+
+      .moon::after {
+        width: 20px;
+        height: 20px;
+        top: 120px;
+        left: 110px;
+      }
+
+      .moon div {
+        position: absolute;
+        border-radius: 50%;
+        background: radial-gradient(circle, #333 20%, transparent 80%);
+        opacity: 0.4;
+        pointer-events: none;
+      }
+
+      .moon div:nth-child(1) {
+        width: 25px;
+        height: 25px;
+        top: 90px;
+        left: 30px;
+      }
+
+      .moon div:nth-child(2) {
+        width: 15px;
+        height: 15px;
+        top: 60px;
+        left: 120px;
+      }
+
+      .moon div:nth-child(3) {
+        width: 12px;
+        height: 12px;
+        top: 20px;
+        left: 80px;
+      }
+
+      @keyframes moonPath {
+        0% {
+          left: -220px;
+        }
+        45% {
+          left: calc(50% - 100px);
+        }
+        55% {
+          left: calc(50% - 100px);
+        }
+        100% {
+          left: 120vw;
+        }
+      }
+
+      @keyframes skyCycle {
+        0% {
+          background: #a3d5f7;
+        }
+        35% {
+          background: #a3d5f7;
+        }
+        40% {
+          background: #5a91a2;
+        }
+        45% {
+          background: #3e606f;
+        }
+        50% {
+          background: #3c5d6b;
+        }
+        55% {
+          background: #3e606f;
+        }
+        60% {
+          background: #5a91a2;
+        }
+        65% {
+          background: #a3d5f7;
+        }
+        100% {
+          background: #a3d5f7;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sun"></div>
+    <div class="moon">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
