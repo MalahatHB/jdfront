@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Print</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        height: 10vh;
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        height: 80vh;
+      }
+
+      section::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      aside {
+        background-color: lightpink;
+        height: 100%;
+        width: 20%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      main {
+        background-color: lightgreen;
+        height: 100%;
+        width: 80%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 40px;
+      }
+
+      footer {
+        background-color: plum;
+        height: 10vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      details {
+        margin: 0 150px;
+      }
+
+      .text-bolder {
+        font-weight: 100;
+        font-size: 0.75;
+      }
+
+      @media print {
+        header,
+        nav,
+        aside,
+        footer {
+          display: none;
+        }
+
+        .text-bolder {
+          font-weight: bolder;
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <section>
+      <aside>Aside</aside>
+      <main class="text-bolder">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, id.
+        Quaerat alias nam officiis sequi asperiores, aliquam in maiores sint eos
+        cumque possimus exercitationem, consequuntur optio odit maxime ipsam
+        nemo mollitia. Modi repellat quam labore assumenda voluptates est
+        perferendis rem blanditiis dolor accusamus cumque illo itaque placeat
+        consequuntur, at aperiam.
+      </main>
+    </section>
+    <footer>Footer</footer>
+  </body>
+</html>

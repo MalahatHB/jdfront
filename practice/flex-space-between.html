@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Layout</title>
+    <style>
+      @import url(../lib/css/pastel-theme.css);
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 100vh;
+      }
+
+      header {
+        height: 10vh;
+        background-color: var(--header-bg);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+      }
+
+      header img {
+        width: 50px;
+        height: auto;
+      }
+
+      header a {
+        text-decoration: none;
+        color: var(--link-color);
+        font-size: 24px;
+        font-weight: 600;
+        transition: color 0.2s ease;
+      }
+
+      header .home:hover {
+        color: #155e39;
+      }
+
+      .login-button {
+        background-color: var(--button-bg);
+        color: var(--button-text);
+        padding: 10px 20px;
+        border-radius: 6px;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .login-button:hover {
+        background-color: #168a89;
+      }
+
+      .layout {
+        flex: 1;
+        display: flex;
+        height: 90vh;
+      }
+
+      aside {
+        width: 25%;
+        background-color: var(--aside-bg);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1.5rem;
+      }
+
+      .links {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .links a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 16px;
+        transition: color 0.2s ease;
+      }
+
+      .links a:hover {
+        color: #2c4c61;
+      }
+
+      aside .copy {
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+      }
+
+      main {
+        flex: 1;
+        background-color: var(--main-bg);
+        padding: 2rem;
+        font-size: 18px;
+      }
+
+      main h3 {
+        color: var(--primary-color);
+      }
+
+      main p {
+        margin-top: 1rem;
+        line-height: 1.25;
+        color: var(--primary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <img src="../lib/img/sun.png" alt="sun" />
+      <a class="home" href="#">Home</a>
+      <a class="login-button" href="#">Login</a>
+    </header>
+    <div class="layout">
+      <aside>
+        <div class="links">
+          <a href="#">Settings</a>
+          <a href="#">Product</a>
+          <a href="#">Theme</a>
+        </div>
+        <div class="copy">&copy; 2025 All rights reserved</div>
+      </aside>
+      <main>
+        <h3>Main Content</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga
+          doloremque nulla magni vel rem et sint facilis voluptate. Nesciunt
+          accusantium quod deserunt voluptas? Libero nam consequatur eligendi
+          eos tenetur sapiente magnam exercitationem? Dolores blanditiis quis
+          iste ipsum aliquid quaerat sit quibusdam autem aperiam et? Dolores
+          amet enim doloremque molestias nam laudantium nesciunt accusantium
+          earum dolore error. Perspiciatis dolorem, eveniet esse in ex, voluptas
+          placeat asperiores molestiae error dolores magnam odio repellendus
+          quibusdam sit rerum laborum ad temporibus quas illum facere.
+          Exercitationem cum molestias omnis vitae vero itaque odit quisquam
+          harum recusandae placeat, totam dolorum, quae a consectetur tenetur
+          aperiam quia!
+        </p>
+      </main>
+    </div>
+  </body>
+</html>

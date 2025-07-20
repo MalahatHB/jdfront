@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Breakpoints Media Query</title>
+    <style>
+      h2 {
+        display: none;
+      }
+
+      @media (max-width: 576px) {
+        body {
+          background-color: orangered;
+        }
+
+        .xs {
+          display: block;
+        }
+      }
+
+      @media (min-width: 577px) and (max-width: 768px) {
+        body {
+          background-color: lightcoral;
+        }
+
+        .sm {
+          display: block;
+        }
+      }
+
+      @media (min-width: 769px) and (max-width: 992px) {
+        body {
+          background-color: orange;
+        }
+
+        .md {
+          display: block;
+        }
+      }
+
+      @media (min-width: 993px) and (max-width: 1200px) {
+        body {
+          background-color: lightseagreen;
+        }
+
+        .lg {
+          display: block;
+        }
+      }
+
+      @media (min-width: 1201px) and (max-width: 1400px) {
+        body {
+          background-color: lightslategray;
+        }
+
+        .xl {
+          display: block;
+        }
+      }
+
+      @media (min-width: 1401px) {
+        body {
+          background-color: yellowgreen;
+        }
+
+        .xxl {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Breakpoints Media Query</h1>
+    <hr />
+    <h2 class="xs">Extra Small (xs)</h2>
+    <h2 class="sm">Small (sm)</h2>
+    <h2 class="md">Medium (md)</h2>
+    <h2 class="lg">Large (lg)</h2>
+    <h2 class="xl">Extra Large (xl)</h2>
+    <h2 class="xxl">Extra Extra Large (xxl)</h2>
+  </body>
+</html>
