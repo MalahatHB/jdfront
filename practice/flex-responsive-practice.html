@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Responsive Practice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      p {
+        font-size: 18px;
+        padding: 10px;
+      }
+
+      .first-paragraph {
+        background-color: lightcoral;
+      }
+
+      .second-paragraph {
+        background-color: lightseagreen;
+      }
+
+      .row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media (max-width: 576px) {
+        .row {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="row">
+      <p class="first-paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+        itaque tempore commodi, reiciendis sint expedita rerum minima quod? Sit
+        nisi, nemo porro dicta id repellat doloribus libero aliquam similique
+        cumque quae ratione et, impedit neque asperiores dolores facilis minus
+        hic harum deserunt error explicabo fugit sunt. Error quis esse ex?
+      </p>
+      <p class="second-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi
+        laudantium fugit quidem facilis earum molestias, aspernatur voluptas
+        deserunt, ea quae unde est placeat accusantium deleniti veniam eveniet.
+        Nemo voluptatum dolore tempora ex soluta? Molestias animi atque
+        reprehenderit cumque laboriosam, voluptatem deserunt, error consequatur
+        sed eveniet quisquam commodi earum possimus vel.
+      </p>
+    </div>
+  </body>
+</html>

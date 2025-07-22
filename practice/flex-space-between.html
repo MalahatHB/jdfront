@@ -112,11 +112,25 @@
         line-height: 1.25;
         color: var(--primary-color);
       }
+
+      @media (max-width: 576px) {
+        .logo {
+          order: 2;
+        }
+
+        .home {
+          display: none;
+        }
+
+        .login-button {
+          order: 1;
+        }
+      }
     </style>
   </head>
   <body>
     <header>
-      <img src="../lib/img/sun.png" alt="sun" />
+      <img class="logo" src="../lib/img/sun.png" alt="sun" />
       <a class="home" href="#">Home</a>
       <a class="login-button" href="#">Login</a>
     </header>

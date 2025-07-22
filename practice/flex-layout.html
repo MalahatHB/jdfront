@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Layout</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      header {
+        background-color: lightgreen;
+        height: 10vh;
+      }
+
+      section {
+        display: flex;
+        height: 80vh;
+      }
+
+      aside {
+        background-color: lightblue;
+        flex-grow: 3;
+      }
+
+      main {
+        background-color: lemonchiffon;
+        flex-grow: 9;
+      }
+
+      footer {
+        background-color: plum;
+        height: 10vh;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <section>
+      <aside>Aside</aside>
+      <main>Main</main>
+    </section>
+    <footer>Footer</footer>
+  </body>
+</html>

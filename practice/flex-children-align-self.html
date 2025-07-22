@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex children align self</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .row {
+        display: flex;
+
+        background-color: wheat;
+        height: 100vh;
+      }
+
+      .row div {
+        height: 70vh;
+        border: 3px solid lightcoral;
+        border-radius: 10px;
+        flex: 3;
+        margin: 20px;
+        background-color: white;
+      }
+
+      .card1,
+      .card3 {
+        align-self: flex-end;
+      }
+
+      .card2 {
+        align-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="row">
+      <div class="card1">CARD 1</div>
+      <div class="card2">CARD 2</div>
+      <div class="card3">CARD 3</div>
+    </section>
+  </body>
+</html>
