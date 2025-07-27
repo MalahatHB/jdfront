@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid children</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 2fr 4fr 4fr;
+
+        background-color: white;
+        height: 100vh;
+      }
+
+      .grid-container div {
+        background-color: lemonchiffon;
+        border: 1px solid orangered;
+      }
+
+      .div1 {
+        /* grid-column: 1 / span 3; */
+        grid-column: 1 / 4;
+      }
+
+      .div2 {
+        grid-row: 2 / 4;
+      }
+
+      .div3 {
+        grid-column: 2 / 4;
+        grid-row: 2 / 5;
+      }
+
+      .div6 {
+        grid-column: 2 / 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="div1">Div 01</div>
+      <div class="div2">Div 02</div>
+      <div class="div3">Div 03</div>
+      <div class="div4">Div 04</div>
+      <div class="div5">Div 05</div>
+      <div class="div6">Div 06</div>
+    </div>
+  </body>
+</html>
