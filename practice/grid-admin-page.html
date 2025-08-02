@@ -3,7 +3,596 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../lib/css/dashboard.css" />
+    <link
+      rel="shortcut icon"
+      href="../lib/img/favicon.ico"
+      type="image/x-icon"
+    />
     <title>Grid Admin page</title>
   </head>
-  <body></body>
+  <body>
+    <div class="dashboard-container">
+      <aside class="sidebar">
+        <img src="../lib/img/logo.png" />
+        <nav class="sidebar-nav">
+          <ul>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-house-door"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8.354 1.146a.5.5 0 0 0-.708 0L1 7.793V14.5A1.5 1.5 0 0 0 2.5 16h11a1.5 1.5 0 0 0 1.5-1.5V7.793l-6.646-6.647zM2 8.707L8 2.707l6 6V14.5a.5.5 0 0 1-.5.5H10v-4a2 2 0 0 0-4 0v4H2.5a.5.5 0 0 1-.5-.5V8.707z"
+                  />
+                </svg>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bar-chart"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 0h1v15h15v1H0V0zm10 10h1v4h-1v-4zm-3-3h1v7H7V7zm-3-3h1v10H4V4z"
+                  />
+                </svg>
+                <span>Reports</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-compass"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"
+                  />
+                  <path
+                    d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"
+                  />
+                </svg>
+                <span>Maps</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-bell"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+                  />
+                </svg>
+                <span>Notifications</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-gear"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"
+                  />
+                  <path
+                    d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z"
+                  />
+                </svg>
+                <span>Settings</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <header class="header">
+        <h3>Reports</h3>
+        <nav class="breadcrumb">
+          <a href="#">Home</a> / <a href="#">Dashboard</a> /
+          <span>Reports</span>
+        </nav>
+      </header>
+
+      <main class="main">
+        <section class="support-requests-container">
+          <section class="support-requests">
+            <div class="card-body">
+              <h2>350</h2>
+              <span class="text-blue">Support Requests</span>
+              <p class="total-number">
+                Total number of support requests that come in.
+              </p>
+            </div>
+            <div class="wave-chart-blue"></div>
+            <div class="support-requests-footer bg-blue text-white">
+              <div class="row text-center">
+                <div class="col">
+                  <h4 class="text-white">10</h4>
+                  <span>Open</span>
+                </div>
+                <div class="col">
+                  <h4 class="text-white">5</h4>
+                  <span>Running</span>
+                </div>
+                <div class="col">
+                  <h4 class="text-white">3</h4>
+                  <span>Solved</span>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="support-requests">
+            <div class="card-body">
+              <h2>350</h2>
+              <span class="text-green">Support Requests</span>
+              <p class="total-number">
+                Total number of support requests that come in.
+              </p>
+            </div>
+            <div class="wave-chart-green"></div>
+            <div class="support-requests-footer bg-green text-white">
+              <div class="row text-center">
+                <div class="col">
+                  <h4 class="text-white">10</h4>
+                  <span>Open</span>
+                </div>
+                <div class="col">
+                  <h4 class="text-white">5</h4>
+                  <span>Running</span>
+                </div>
+                <div class="col">
+                  <h4 class="text-white">3</h4>
+                  <span>Solved</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+
+        <section class="chat-container">
+          <div class="chat-box">
+            <div class="chat-box-body">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h4 class="text-yellow">$30200</h4>
+                  <h6 class="text-muted">All Earnings</h6>
+                </div>
+                <div class="col-4 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-bar-chart"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="support-requests-footer bg-yellow">
+              <div class="row align-items-center">
+                <div class="col-9">
+                  <p class="text-white">% change</p>
+                </div>
+                <div class="col-3 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-graph-up-arrow"
+                    viewBox="0 0 16 16"
+                    style="color: white"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-box">
+            <div class="chat-box-body">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h4 class="text-green">$30200</h4>
+                  <h6 class="text-muted">Page Views</h6>
+                </div>
+                <div class="col-4 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-newspaper"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5z"
+                    />
+                    <path
+                      d="M2 3h10v2H2zm0 3h4v3H2zm0 4h4v1H2zm0 2h4v1H2zm5-6h2v1H7zm3 0h2v1h-2zM7 8h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2zm-3 2h2v1H7zm3 0h2v1h-2z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="support-requests-footer bg-green">
+              <div class="row align-items-center">
+                <div class="col-9">
+                  <p class="text-white">% change</p>
+                </div>
+                <div class="col-3 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-graph-up-arrow"
+                    viewBox="0 0 16 16"
+                    style="color: white"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-box">
+            <div class="chat-box-body">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h4 class="text-red">$30200</h4>
+                  <h6 class="text-muted">Task</h6>
+                </div>
+                <div class="col-4 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-calendar"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="support-requests-footer bg-red">
+              <div class="row align-items-center">
+                <div class="col-9">
+                  <p class="text-white">% change</p>
+                </div>
+                <div class="col-3 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-graph-down-arrow"
+                    viewBox="0 0 16 16"
+                    style="color: white"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chat-box">
+            <div class="chat-box-body">
+              <div class="row align-items-center">
+                <div class="col-8">
+                  <h4 class="text-blue">$30200</h4>
+                  <h6 class="text-muted">Downloads</h6>
+                </div>
+                <div class="col-4 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    fill="currentColor"
+                    class="bi bi-hand-thumbs-down"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8.864 15.674c-.956.24-1.843-.484-1.908-1.42-.072-1.05-.23-2.015-.428-2.59-.125-.36-.479-1.012-1.04-1.638-.557-.624-1.282-1.179-2.131-1.41C2.685 8.432 2 7.85 2 7V3c0-.845.682-1.464 1.448-1.546 1.07-.113 1.564-.415 2.068-.723l.048-.029c.272-.166.578-.349.97-.484C6.931.08 7.395 0 8 0h3.5c.937 0 1.599.478 1.934 1.064.164.287.254.607.254.913 0 .152-.023.312-.077.464.201.262.38.577.488.9.11.33.172.762.004 1.15.069.13.12.268.159.403.077.27.113.567.113.856s-.036.586-.113.856c-.035.12-.08.244-.138.363.394.571.418 1.2.234 1.733-.206.592-.682 1.1-1.2 1.272-.847.283-1.803.276-2.516.211a10 10 0 0 1-.443-.05 9.36 9.36 0 0 1-.062 4.51c-.138.508-.55.848-1.012.964zM11.5 1H8c-.51 0-.863.068-1.14.163-.281.097-.506.229-.776.393l-.04.025c-.555.338-1.198.73-2.49.868-.333.035-.554.29-.554.55V7c0 .255.226.543.62.65 1.095.3 1.977.997 2.614 1.709.635.71 1.064 1.475 1.238 1.977.243.7.407 1.768.482 2.85.025.362.36.595.667.518l.262-.065c.16-.04.258-.144.288-.255a8.34 8.34 0 0 0-.145-4.726.5.5 0 0 1 .595-.643h.003l.014.004.058.013a9 9 0 0 0 1.036.157c.663.06 1.457.054 2.11-.163.175-.059.45-.301.57-.651.107-.308.087-.67-.266-1.021L12.793 7l.353-.354c.043-.042.105-.14.154-.315.048-.167.075-.37.075-.581s-.027-.414-.075-.581c-.05-.174-.111-.273-.154-.315l-.353-.354.353-.354c.047-.047.109-.176.005-.488a2.2 2.2 0 0 0-.505-.804l-.353-.354.353-.354c.006-.005.041-.05.041-.17a.9.9 0 0 0-.121-.415C12.4 1.272 12.063 1 11.5 1"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="support-requests-footer bg-blue">
+              <div class="row align-items-center">
+                <div class="col-9">
+                  <p class="text-white">% change</p>
+                </div>
+                <div class="col-3 text-right">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-graph-down-arrow"
+                    viewBox="0 0 16 16"
+                    style="color: white"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M0 0h1v15h15v1H0zm10 11.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 0-1 0v2.6l-3.613-4.417a.5.5 0 0 0-.74-.037L7.06 8.233 3.404 3.206a.5.5 0 0 0-.808.588l4 5.5a.5.5 0 0 0 .758.06l2.609-2.61L13.445 11H10.5a.5.5 0 0 0-.5.5"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects">
+          <h2 class="projects-updates-title">Projects Table</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Assigned</th>
+                <th>Name</th>
+                <th>Due Date</th>
+                <th>Priority</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>John Deo</th>
+                <td>Able Pro</td>
+                <td>Jun, 26</td>
+                <td class="bg-red">Low</td>
+              </tr>
+              <tr>
+                <th>Jenifer Vintage</th>
+                <td>Mashable</td>
+                <td>March, 31</td>
+                <td class="bg-blue">High</td>
+              </tr>
+              <tr>
+                <th>William Jem</th>
+                <td>Flatable</td>
+                <td>Aug, 02</td>
+                <td class="bg-green">Medium</td>
+              </tr>
+              <tr>
+                <th>David Jones</th>
+                <td>Guruable</td>
+                <td>Sep, 22</td>
+                <td class="bg-blue">High</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="updates">
+          <h2 class="projects-updates-title">Latest Updates</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>App</th>
+                <th>Followers</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Instagram</th>
+                <td>1200</td>
+                <td>Jun, 26</td>
+              </tr>
+              <tr>
+                <th>Facebook</th>
+                <td>2000</td>
+                <td>March, 31</td>
+              </tr>
+              <tr>
+                <th>X</th>
+                <td>1000</td>
+                <td>Aug, 02</td>
+              </tr>
+              <tr>
+                <th>Threads</th>
+                <td>1000</td>
+                <td>Aug, 08</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section class="stats">
+          <div class="stat">
+            <div class="info">
+              <div class="value">$16,756</div>
+              <div class="visits-label">Visits</div>
+            </div>
+            <svg
+              class="chart"
+              viewBox="0 0 100 50"
+              fill="none"
+              stroke="#4a90e2"
+              stroke-width="2"
+            >
+              <path
+                d="M0 40 L10 20 L20 30 L30 10 L40 25 L50 15 L60 30 L70 20 L80 25 L90 20 L100 30"
+                fill="rgba(74, 144, 226, 0.2)"
+              />
+            </svg>
+          </div>
+          <div class="stat">
+            <div class="info">
+              <div class="value">49.54%</div>
+              <div class="bounce-label">Bounce Rate</div>
+            </div>
+            <svg class="chart" viewBox="0 0 100 50">
+              <g fill="#8bc34a">
+                <rect x="0" y="35" width="4" height="15" />
+                <rect x="6" y="30" width="4" height="20" />
+                <rect x="12" y="32" width="4" height="18" />
+                <rect x="18" y="25" width="4" height="25" />
+                <rect x="24" y="28" width="4" height="22" />
+                <rect x="30" y="35" width="4" height="15" />
+                <rect x="36" y="38" width="4" height="12" />
+                <rect x="42" y="33" width="4" height="17" />
+                <rect x="48" y="30" width="4" height="20" />
+                <rect x="54" y="35" width="4" height="15" />
+                <rect x="60" y="40" width="4" height="10" />
+                <rect x="66" y="28" width="4" height="22" />
+                <rect x="72" y="35" width="4" height="15" />
+              </g>
+            </svg>
+          </div>
+          <div class="stat">
+            <div class="info">
+              <div class="value">1,62,564</div>
+              <div class="visits-label">Products</div>
+            </div>
+            <svg
+              class="chart"
+              viewBox="0 0 100 50"
+              fill="none"
+              stroke="#f44336"
+              stroke-width="2"
+            >
+              <path
+                d="M0 40 L10 20 L20 30 L30 15 L40 25 L50 10 L60 20 L70 25 L80 20 L90 30 L100 35"
+                fill="rgba(244, 67, 54, 0.1)"
+              />
+            </svg>
+          </div>
+        </section>
+
+        <section class="power">
+          <h2>Power</h2>
+          <svg
+            width="400"
+            height="60"
+            viewBox="0 0 400 60"
+            xmlns="http://www.w3.org/2000/svg"
+            style="width: 100%; height: auto"
+          >
+            <path
+              d="M0,50 C60,30 120,10 180,30 C240,50 300,20 360,35 L400,60 L0,60 Z"
+              fill="rgba(244, 67, 54, 0.1)"
+            />
+            <path
+              d="M0,50 C60,30 120,10 180,30 C240,50 300,20 360,35"
+              stroke="#f44336"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </section>
+        <section class="temperature">
+          <h2>Temperature</h2>
+          <svg class="temperature-chart" viewBox="0 0 80 50">
+            <g fill="#ffba57">
+              <rect x="0" y="35" width="4" height="15" />
+              <rect x="6" y="30" width="4" height="20" />
+              <rect x="12" y="32" width="4" height="18" />
+              <rect x="18" y="25" width="4" height="25" />
+              <rect x="24" y="28" width="4" height="22" />
+              <rect x="30" y="35" width="4" height="15" />
+              <rect x="36" y="38" width="4" height="12" />
+              <rect x="42" y="33" width="4" height="17" />
+              <rect x="48" y="30" width="4" height="20" />
+              <rect x="54" y="35" width="4" height="15" />
+              <rect x="60" y="40" width="4" height="10" />
+              <rect x="66" y="28" width="4" height="22" />
+              <rect x="72" y="35" width="4" height="15" />
+            </g>
+          </svg>
+        </section>
+
+        <section class="report">
+          <h2 class="project-risk">Project Risk</h2>
+          <div class="chart-wrapper">
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="60"
+                cy="60"
+                r="50"
+                stroke="#e0e0e0"
+                stroke-width="15"
+                fill="none"
+              />
+              <circle
+                cx="60"
+                cy="60"
+                r="50"
+                stroke="#4caf50"
+                stroke-width="15"
+                fill="none"
+                stroke-dasharray="314"
+                stroke-dashoffset="110"
+                stroke-linecap="round"
+                transform="rotate(-90 60 60)"
+              />
+              <text
+                x="50%"
+                y="50%"
+                dominant-baseline="middle"
+                text-anchor="middle"
+                font-size="20"
+                fill="#333"
+                font-weight="bold"
+              >
+                65%
+              </text>
+            </svg>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
 </html>
