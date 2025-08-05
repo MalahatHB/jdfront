@@ -1,9 +1,824 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="fa">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../lib/img/digikala/favicon.webp"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../lib/css/digikala-home-page.css" />
     <title>Digikala home page flex</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <img
+        class="banner"
+        src="../lib/img/digikala/banner.webp"
+        alt="row digikala"
+      />
+      <div class="header">
+        <div class="col-2">
+          <img src="../lib/img/digikala/logo.svg" alt="digikala" class="logo" />
+        </div>
+        <div class="col-7">
+          <input
+            class="search-bar"
+            id="search"
+            type="text"
+            placeholder="جستجو"
+          />
+        </div>
+        <div class="col-3 flex-group">
+          <div class="icon">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-bell"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="login">
+            <a href="#" class="login-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-box-arrow-in-left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z"
+                />
+                <path
+                  fill-rule="evenodd"
+                  d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z"
+                />
+              </svg>
+              ورود | ثبت‌نام
+            </a>
+          </div>
+          <div class="icon">
+            <a href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                fill="currentColor"
+                class="bi bi-cart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <nav class="row col-10">
+          <a href="#" class="category">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-list"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+              />
+            </svg>
+            دسته‌بندی کالاها
+          </a>
+          <a href="#" class="category">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-percent"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M13.442 2.558a.625.625 0 0 1 0 .884l-10 10a.625.625 0 1 1-.884-.884l10-10a.625.625 0 0 1 .884 0M4.5 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5m7 6a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m0 1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"
+              />
+            </svg>
+            شگفت‌انگیزها
+          </a>
+          <a href="#" class="category">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-basket"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1v4.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 13.5V9a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h1.217L5.07 1.243a.5.5 0 0 1 .686-.172zM2 9v4.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V9zM1 7v1h14V7zm3 3a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 4 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 6 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3A.5.5 0 0 1 8 10m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5m2 0a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5"
+              />
+            </svg>
+            سوپرمارکت
+          </a>
+          <a href="#" class="category">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-cash-stack"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4"
+              />
+              <path
+                d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2z"
+              />
+            </svg>
+            طلای دیجیتال
+          </a>
+          <a href="#" class="category">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-fire"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"
+              />
+            </svg>
+            پرفروش ترین
+          </a>
+          <a href="#" class="category">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-phone"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+              />
+              <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+            </svg>
+            خرید کالای کارکرده
+          </a>
+          <a href="#" class="category">سوالی دارید؟</a>
+          <a href="#" class="category">در دیجی کالا بفروشید!</a>
+        </nav>
+        <div class="col-2 location">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-geo-alt-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"
+            />
+          </svg>
+          شهر خود را انتخاب کنید
+        </div>
+      </div>
+    </header>
+    <hr />
+
+    <section class="container story-container">
+      <div class="story-scroll">
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/live_commerce_covers/a39b180406f2e1af81cb4026312983ee0c6e6f04_1754140948.jpg?width=115"
+              alt="استوری 01"
+            />
+          </a>
+          <p>مشاوره خرید موبایل</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/2061ed67201ece9964ee2e986678f30de320dae5_1753861018.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 02"
+            />
+          </a>
+          <p>گردونه میلیاردی</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/29c9362e287275894f6bbfa759076ec951e952ae_1753402082.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>بوی وانیل پوست نرم</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/638d1ea3bc3a8c2460c621041c807aea48081aa8_1751984973.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>جغجغه ای چطوره؟؟!</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/071cb2b211ca0e3e2b81dbfdebd368afbbabb569_1752190087.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>همه رو اذیت کن!</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/3cccb00d9a85b3c8ff512cde420e7b3dbed3cf2b_1753077514.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>۳ کاره‌ی گرون</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/af2576aea5718470be3d997721ebc6ae0ba282cf_1752741180.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>کدومو پسندیدی؟</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/151cd081c0b8e4fcfca11b627a1cf0c5e88d2512_1752260225.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>آباژور سنتی</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/de849f81bba91c1edf2e64a1bbf8659727aaf35a_1753216155.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>هدفون گیمینگ</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/99a54e8645bf108d9cc31ee58b0a9e7325553f9c_1752261639.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>پاوربانک جاسوئیچی</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/3d497d3ec39499afebd02443801ef5ef654173cc_1753076759.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>یه قمقمه خوب</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/92c2a31b56e80b270e01c5e70ecf05483b658bbb_1753112142.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>هاب 5 پورت مک دودو</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/54a761ebdc8c42d968cc18ca164080f313d0fa7e_1753124450.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>کدوم پرروتره؟!</p>
+        </div>
+        <div class="story-item">
+          <a href="#" class="story-img">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-content-x-post-media/6227c501bac1d05ce5050d5f31e4cff93f65c1f5_1753121120.jpg?x-oss-process=image/resize,m_fill,h_115,w_115"
+              alt="استوری 03"
+            />
+          </a>
+          <p>براش شور ادایی</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid carousel">
+      <img src="../lib/img/digikala/slider.gif" alt="carousel" class="banner" />
+    </section>
+
+    <main class="container">
+      <div class="row shop-container">
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/139deecc67bc7f12c6d984955c59957dc7e49385_1753977953.png"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">طلای‌ دیجیتال</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/da9a6e72085322d88537fd7c33dbe9edbd34db51_1753884517.jpg"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">بیت کوبن</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/5ccff601d5d93f7624ad18a6102a8c80fa249d1c_1754145886.png"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">با تتر وام بگیر</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/e4de6f360fcda4f501f21419ba40a100460740cd_1733129128.png"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">خرید قسطی</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/52e0ce33f1ce60cafa198eaecbca90320aaeb7a7_1753513353.png"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">موتور برق</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/a3d75bd934740d37f23709a778ec136f2ce41651_1751120161.jpg"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">تخفیف طلا</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/78ccd40cbf305fb067de78ddab5be84f69589c8d_1669150455.png"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">اشتراک پلاس</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/7493e66e491c18d699274a48a53a9dfcb8aa2e93_1717230600.png"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">فروشگاه حضوری</p>
+        </a>
+        <a href="#">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-bellatrix/b9f37d8283afd3a309e30756a38c3f879453262a_1734768282.png"
+            alt=""
+            class="shop"
+          />
+          <p class="shop-desc">تخفیف بومی محلی</p>
+        </a>
+        <a href="#">
+          <div class="more">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-three-dots"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3m5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3"
+              />
+            </svg>
+          </div>
+          <p class="shop-desc">بیشتر</p>
+        </a>
+      </div>
+      <div class="row digi-slider">
+        <div class="digi-scroll">
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/d6518a10b641b32833525b184f518e9ad0a38ec0_1751860865.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>گوشی موبایل ژیواکو مدل F121 دو سیم کارت</p>
+            <p class="price">۸۶۳,۲۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/b216b8f151b43587d20a58a90fc41eb06f2aa3e3_1736767358.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>گوشی موبایل تی سی ال مدل 50 NxtPaper 5G</p>
+            <p class="price">۱۵,۰۱۲,۲۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/237a8fa3eedc23f1d630ff7c2b004d0636dce5f7_1738136821.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>گوشی موبایل ریلمی مدل C61 دو سیم کارت</p>
+            <p class="price">۸,۷۴۲,۱۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/ad4330e32d6178495ea97e7cd0e2eda6164715fb_1704096059.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>لپ تاپ 15.6 اینچی</p>
+            <p class="price">۸,۸۶۳,۲۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/2c0eef6b701eb7c8d5d89797cd34fbf1b3b5a02c_1748869760.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>لپ تاپ 15.6 اینچی</p>
+            <p class="price">۶,۸۶۳,۲۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/fb0eb0e5d175cecb5a4786b2f28494187579e79e_1722421508.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>لپ تاپ 18 اینچی</p>
+            <p class="price">۶,۳۶۳,۲۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/21c22ce9cfc093fcc135ec9a0be5a82b0d9d8f70_1703313253.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>لپ تاپ 18 اینچی</p>
+            <p class="price">۸۶۳,۲۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item">
+            <img
+              src="https://dkstatics-public.digikala.com/digikala-products/86372b2b3a72b61a4916f0fd4712a2b57958ca8b_1616316317.jpg?x-oss-process=image/resize,m_lfit,h_300,w_300/format,webp/quality,q_80"
+              alt=""
+            />
+            <p>کوئیک شیفتر دبلیو آر سی کد 01</p>
+            <p class="price">۸۶۳,۲۰۰ تومان</p>
+          </a>
+          <a href="#" class="digi-item digi-item-see-more">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-arrow-left-circle"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+              />
+            </svg>
+            <p>مشاهده همه</p>
+          </a>
+        </div>
+      </div>
+      <div class="row sales-container">
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/a45662d7bf0cb4d8d21c527a65105f7371558f80_1753872321.gif?x-oss-process=image?x-oss-process=image/format,webp"
+            alt=""
+          />
+        </div>
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/b2d2e075e2c84926ec65e13b7cabe894a1ebe4ce_1754125507.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/485a5b7c142a1042ccbbadcc73c019e0e89903a0_1754126068.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/b6dffb6dba173711f4b2f175c21f8ef38b38eb59_1753787345.gif?x-oss-process=image?x-oss-process=image/format,webp"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <a href="#" class="col-12">
+          <img class="off" src="../lib/img/digikala/off.png" alt="" />
+        </a>
+      </div>
+      <div class="row sales-container">
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/f2fe136abab9db65c2df657ff6c288e0769fb6e6_1754210607.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/dc869bf540cc61110a08a39b3cf73d81533ceb2b_1754212649.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/3b9253377a4786f44d06f69f7b05f2c19cae8637_1754212018.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+        <div class="sales">
+          <img
+            src="https://dkstatics-public.digikala.com/digikala-adservice-banners/41e4efe3e146d8b1a135d615ac5cd25067195870_1754217074.jpg?x-oss-process=image/quality,q_95/format,webp"
+            alt=""
+          />
+        </div>
+      </div>
+    </main>
+    <footer class="dk-footer">
+      <hr />
+      <div class="footer-desc">
+        <div class="footer">
+          <img src="../lib/img/digikala/logo.svg" width="150px" alt="" />
+          <div>
+            <a class="up" href="#">
+              بازگشت به بالا
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="bi bi-caret-up-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <p class="footer-text">
+          تلفن پشتیبانی ۶۱۹۳۰۰۰۰ - ۰۲۱ | ۰۲۱-۹۱۰۰۰۱۰۰ | ۷ روز هفته، ۲۴ ساعته
+          پاسخگوی شما هستیم
+        </p>
+        <div class="footer-icons">
+          <div>
+            <img
+              src="https://www.digikala.com/statics/img/svg/footer/express-delivery.svg"
+              alt=""
+            />
+            <p>اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس</p>
+          </div>
+          <div>
+            <img
+              src="https://www.digikala.com/statics/img/svg/footer/cash-on-delivery.svg"
+              alt=""
+            />
+            <p>امکان پرداخت در محل</p>
+          </div>
+          <div>
+            <img
+              src="https://www.digikala.com/statics/img/svg/footer/support.svg"
+              alt=""
+            />
+            <p>7 روز هفته، 24 ساعته</p>
+          </div>
+          <div>
+            <img
+              src="https://www.digikala.com/statics/img/svg/footer/days-return.svg"
+              alt=""
+            />
+            <p>هفت روز ضمانت بازگشت کالا</p>
+          </div>
+          <div>
+            <img
+              src="https://www.digikala.com/statics/img/svg/footer/original-products.svg"
+              alt=""
+            />
+            <p>ضمانت اصل بودن کالا</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-top">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>با دیجی‌کالا</h4>
+            <ul>
+              <li><a href="#">اتاق خبر دیجی‌کالا</a></li>
+              <li><a href="#">فروش در دیجی‌کالا</a></li>
+              <li><a href="#">فرصت‌های شغلی</a></li>
+              <li><a href="#">گزارش تخلف در دیجی‌کالا</a></li>
+              <li><a href="#">تماس با دیجی‌کالا</a></li>
+              <li><a href="#">درباره دیجی‌کالا</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>خدمات مشتریان</h4>
+            <ul>
+              <li><a href="#">پاسخ به پرسش‌های متداول</a></li>
+              <li><a href="#">رویه‌های بازگرداندن کالا</a></li>
+              <li><a href="#">شرایط استفاده</a></li>
+              <li><a href="#">حریم خصوصی</a></li>
+              <li><a href="#">گزارش باگ</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>راهنمای خرید از دیجی‌کالا</h4>
+            <ul>
+              <li><a href="#">نحوه ثبت سفارش</a></li>
+              <li><a href="#">رویه ارسال سفارش</a></li>
+              <li><a href="#">شیوه‌های پرداخت</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-app">
+        <div class="footer-app-container">
+          <div class="app-logo">
+            <img
+              src="https://www.digikala.com/statics/img/png/footerlogo2.webp"
+              alt=""
+              width="40px"
+              height="40px"
+            />
+            <p class="download-text">دانلود اپلیکیشن دیجی‌کالا</p>
+          </div>
+
+          <div>
+            <a href="#" class="app-icons">
+              <img src="../lib/img/digikala/bazar.png" alt="اپلیکیشن‌ها" />
+            </a>
+            <a href="#" class="app-icons">
+              <img src="../lib/img/digikala/myket.png" alt="اپلیکیشن‌ها" />
+            </a>
+            <a href="#" class="app-icons">
+              <img src="../lib/img/digikala/sibapp.png" alt="اپلیکیشن‌ها" />
+            </a>
+            <a href="#" class="app-icons">
+              <img src="../lib/img/digikala/more.png" alt="اپلیکیشن‌ها" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="dk-footer-brands">
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/diginext.svg"
+          alt="diginext"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digiMehr.svg"
+          alt="digikalamehr"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/jet.svg"
+          alt="digikalajet"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digiclub.svg"
+          alt="digiclub"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digiplus.svg"
+          alt="plus"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digistyle.svg"
+          alt="digistyle"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digipay.svg"
+          alt="digipay"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digimag.svg"
+          alt="digikalamag"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digikala-service.svg"
+          alt="digikalaservice"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digikala-business.svg"
+          alt="digikalabusiness"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/smartech.svg"
+          alt="smartech"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digify.svg"
+          alt="digify"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/ganjeh.svg"
+          alt="gnje"
+        />
+      </div>
+      <div class="brand-item">
+        <img
+          src="https://www.digikala.com/statics/img/svg/footer/digiexpress.svg"
+          alt="digiexpress"
+        />
+      </div>
+    </div>
+
+    <a href="#" class="support">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="22"
+        height="22"
+        fill="currentColor"
+        class="bi bi-headset"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"
+        />
+      </svg>
+    </a>
+
+    <a href="#" class="supermarket">
+      سوپرمارکت | تنوع بالا و پر تخفیف
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-basket-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z"
+        />
+      </svg>
+    </a>
+  </body>
 </html>
