@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to Javascript</title>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      div {
+        padding: 10px 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Javascript</h1>
+    <hr />
+    <div style="background-color: lightsalmon">
+      <h2>Type of site</h2>
+      <ol>
+        <li>Statis</li>
+        <li>Dynamic</li>
+      </ol>
+    </div>
+    <div style="background-color: lightseagreen">
+      My name is Malahat and I'm 24.
+    </div>
+    <div style="background-color: lightcoral">
+      My name is Malahat and I'm <span id="age"></span>.
+    </div>
+
+    <div style="direction: rtl; background-color: lightgoldenrodyellow">
+      <h2>جاوااسکریپت چیست؟</h2>
+      <ul>
+        <li>زبان سطح بالا است</li>
+        <li>مفصری کار میکنه</li>
+        <li>اسکریپت نویسی</li>
+        <li>شی گرایی را پشتیبانی میکند (OOP)</li>
+        <li>حساس به حروف بزرگ و کوچک است</li>
+      </ul>
+    </div>
+
+    <div style="background-color: lightgreen">
+      <h2>Javascript versions</h2>
+      <ul>
+        <li>1995 Javascript</li>
+        <li>1997 - 1999 EcmaScript ES1, ES2, ES3</li>
+        <li>2015 ES6</li>
+        <li>2016... EcmaScript 2016, ES2024</li>
+      </ul>
+    </div>
+
+    <script>
+      const date = new Date();
+      document.getElementById("age").innerHTML = date.getFullYear() - 2001;
+    </script>
+  </body>
+</html>

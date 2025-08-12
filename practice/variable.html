@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variable</title>
+  </head>
+  <body>
+    <script>
+      // variable => container
+      /*
+        var
+        let
+        const
+      */
+
+      // 1995 - var
+      //   var i = 10;
+      //   j = 20;
+      //   var a, b, c;
+      //   j = 30;
+
+      // نباید بتوان قبل از تعریف آن را صدا بزنیم
+      console.log(firstName);
+      // let به درستی عمل میکند
+      // console.log(lastName);
+
+      var firstName = "Malahat";
+      let lastName = "Habibi";
+
+      // نباید مجددا امکان استفاده از نام متغیر را داشته باشیم
+      // var firstName = "Ali";
+      // let lastName = "";
+
+      // scope or block
+      var i = 10;
+      let j = 10;
+      {
+        // another scope or block
+        var i = 20;
+        let j = 20;
+      }
+      console.log(i);
+      console.log(j);
+
+      // let vs const
+      let m = 10;
+      m = 20;
+      console.log(m);
+
+      const n = 10;
+      // امکان مقداردهی مجدد نیست
+      n = 200; // ERROR
+      console.log(n);
+
+      // از کدامیک بهتر است استفاده شود؟
+      // 1: const
+      // اولویت با کانست است چون اجازه نمیدهد متغیر مجددمقداردهی شود
+      // این باعث امنیت مقدار داده میوشد (قفل میشود)
+      const PI = 3.14;
+      // 2: let
+
+      // var: please never use.
+    </script>
+  </body>
+</html>
